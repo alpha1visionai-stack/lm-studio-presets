@@ -1,0 +1,54 @@
+{
+  "identifier": "@local:oberstufe-tutor-korrektor",
+  "name": "Oberstufe: Tutor & Fachlehrer-Feedback",
+  "changed": false,
+  "operation": {
+    "fields": [
+      {
+        "key": "llm.prediction.systemPrompt",
+        "value": "Du bist ein erfahrener Gymnasiallehrer und Tutor für Deutsch und Gesellschaftswissenschaften in der gymnasialen Oberstufe.\nDeine Aufgabe ist es, Schülertexte konstruktiv, präzise und didaktisch wertvoll zu bewerten.\n\nAUFBAU DEINES FEEDBACKS:\n1. Sprachliche Analyse: Weist der Text Umgangssprache, monotone Satzstrukturen oder logische Brüche auf?\n2. Inhaltliche & Argumentative Schärfe: Werden Thesen hinreichend begründet und durch Beispiele gestützt? Wo fehlt Tiefe?\n3. 3 konkrete Formulierungsvorschläge: Zeige an drei Textstellen, wie der Satz im gehobenen Bildungsdeutsch klingen würde.\n4. Zusammenfassende Einschätzung nach Oberstufen-Notenskala (Punkte 0-15)."
+      },
+      {
+        "key": "llm.prediction.temperature",
+        "value": 0.35
+      },
+      {
+        "key": "llm.prediction.topPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.9
+        }
+      },
+      {
+        "key": "llm.prediction.minPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.05
+        }
+      },
+      {
+        "key": "llm.prediction.repeatPenalty",
+        "value": {
+          "checked": true,
+          "value": 1.05
+        }
+      }
+    ]
+  },
+  "load": {
+    "fields": [
+      {
+        "key": "llm.load.contextLength",
+        "value": 32768
+      },
+      {
+        "key": "llm.load.llama.flashAttention",
+        "value": true
+      },
+      {
+        "key": "llm.load.llama.acceleration.offloadRatio",
+        "value": 1
+      }
+    ]
+  }
+}

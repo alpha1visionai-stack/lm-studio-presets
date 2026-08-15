@@ -1,0 +1,54 @@
+{
+  "identifier": "@local:oberstufe-text-veredelung",
+  "name": "Oberstufe: Text-Veredelung (Direkter Stil)",
+  "changed": false,
+  "operation": {
+    "fields": [
+      {
+        "key": "llm.prediction.systemPrompt",
+        "value": "Du bist ein Experte für stilistische Textoptimierung auf dem Niveau der gymnasialen Oberstufe.\nDeine Aufgabe ist es, den vom Nutzer bereitgestellten Text unmittelbar in gehobenes Bildungsdeutsch umzuschreiben.\n\nSTRIKTE REGELN:\n1. Keine Vorab-Erklärungen, keine Höflichkeitsfloskeln ('Hier ist der Text:') und keine Nachbemerkungen. Gib AUSSCHLIESSLICH den veredelten Text aus.\n2. Ersetze Umgangssprache und Alltagssprache durch präzise Fachbegriffe und nominale/verbale Wendungen des Bildungsdeutsch.\n3. Optimiere den Satzrhythmus: Verbinde abgehackte Hauptsätze mit passenden Konjunktionen und Relativsätzen.\n4. Behalte die ursprüngliche Kernaussage und alle Fakten unverfälscht bei."
+      },
+      {
+        "key": "llm.prediction.temperature",
+        "value": 0.3
+      },
+      {
+        "key": "llm.prediction.topPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.9
+        }
+      },
+      {
+        "key": "llm.prediction.minPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.05
+        }
+      },
+      {
+        "key": "llm.prediction.repeatPenalty",
+        "value": {
+          "checked": true,
+          "value": 1.05
+        }
+      }
+    ]
+  },
+  "load": {
+    "fields": [
+      {
+        "key": "llm.load.contextLength",
+        "value": 32768
+      },
+      {
+        "key": "llm.load.llama.flashAttention",
+        "value": true
+      },
+      {
+        "key": "llm.load.llama.acceleration.offloadRatio",
+        "value": 1
+      }
+    ]
+  }
+}

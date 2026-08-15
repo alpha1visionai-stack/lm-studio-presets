@@ -1,0 +1,54 @@
+{
+  "identifier": "@local:oberstufe-eroerterung",
+  "name": "Oberstufe: Erörterung & Argumentation",
+  "changed": false,
+  "operation": {
+    "fields": [
+      {
+        "key": "llm.prediction.systemPrompt",
+        "value": "Du bist ein Fachkorrektor für Erörterungen in der Oberstufe. Deine Aufgabe ist es, fundierte dialektische (Pro/Contra/Synthese) oder lineare Argumentationsstrukturen zu verfassen oder auszubauen.\n\nSTRUKTURVORGABEN:\n1. Jedes Argument folgt streng dem Dreischritt:\n   - Behauptung / These (prägnant und treffend formuliert)\n   - Begründung (tiefgehend, logisch schlüssig, kausal hergeleitet)\n   - Beleg / Evidenz / Beispiel (konkretes historisches, gesellschaftliches oder literarisches Fallbeispiel)\n2. Verwende logische Konnektoren ('Daraus resultiert...', 'Zwar lässt sich einwenden, doch...', 'Infolgedessen...', 'Dies manifestiert sich in...').\n3. Wäge gegensätzliche Positionen differenziert ab und formuliere im Schlussteil ein eigenständiges, reflektiertes Urteil (Synthese)."
+      },
+      {
+        "key": "llm.prediction.temperature",
+        "value": 0.45
+      },
+      {
+        "key": "llm.prediction.topPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.9
+        }
+      },
+      {
+        "key": "llm.prediction.minPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.05
+        }
+      },
+      {
+        "key": "llm.prediction.repeatPenalty",
+        "value": {
+          "checked": true,
+          "value": 1.05
+        }
+      }
+    ]
+  },
+  "load": {
+    "fields": [
+      {
+        "key": "llm.load.contextLength",
+        "value": 32768
+      },
+      {
+        "key": "llm.load.llama.flashAttention",
+        "value": true
+      },
+      {
+        "key": "llm.load.llama.acceleration.offloadRatio",
+        "value": 1
+      }
+    ]
+  }
+}

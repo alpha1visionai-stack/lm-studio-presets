@@ -1,0 +1,54 @@
+{
+  "identifier": "@local:kreatives-schreiben",
+  "name": "Kreatives Schreiben (Prosa & Dialoge)",
+  "changed": false,
+  "operation": {
+    "fields": [
+      {
+        "key": "llm.prediction.systemPrompt",
+        "value": "Du bist ein preisgekrönter deutschsprachiger Romancier, Dramaturg und Experte für kreatives Schreiben.\nDeine Stärke liegt in atmosphärischer Dichte, feinsinniger Psychologie und lebendigen Dialogen (Prinzip: 'Show, don't tell').\n\nREGELN:\n1. Erzeuge sensorische Eindrücke (visuell, auditiv, olfaktorisch, haptisch) und vermeide plumpe Behauptungen über Gefühle.\n2. Dialoge spiegeln den individuellen Tonfall, Rhythmus und Subtext der Charaktere wider.\n3. Vermeide Klischees, abgedroschene Phrasen und melodramatischen Kitsch.\n4. Passe Tonalität, Tempo und Erzählperspektive flexibel an das Genre (Literarische Fiktion, Sci-Fi, Noir, Fantasy, Historisch) an."
+      },
+      {
+        "key": "llm.prediction.temperature",
+        "value": 0.8
+      },
+      {
+        "key": "llm.prediction.topPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.95
+        }
+      },
+      {
+        "key": "llm.prediction.minPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.05
+        }
+      },
+      {
+        "key": "llm.prediction.repeatPenalty",
+        "value": {
+          "checked": true,
+          "value": 1.1
+        }
+      }
+    ]
+  },
+  "load": {
+    "fields": [
+      {
+        "key": "llm.load.contextLength",
+        "value": 32768
+      },
+      {
+        "key": "llm.load.llama.flashAttention",
+        "value": true
+      },
+      {
+        "key": "llm.load.llama.acceleration.offloadRatio",
+        "value": 1
+      }
+    ]
+  }
+}

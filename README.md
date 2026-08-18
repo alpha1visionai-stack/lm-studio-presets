@@ -15,6 +15,7 @@ Speziell abgestimmt auf **akademisches Schreiben (Gymnasium Oberstufe / Abitur),
 | **👨‍🏫 Oberstufe: Tutor & Fachlehrer-Feedback** | `Oberstufe - Tutor und Korrektor.preset.json` | Didaktische Korrektur: Erkennt Umgangssprache, Argumentationslücken und liefert 3 konkrete Formulierungsvorschläge + Noteneinschätzung. | `SauerkrautLM-Nemo-12B`, `DeepSeek-R1-Distill-Qwen-14B` |
 | **🛡️ Menschlich & Natürlich (Anti-KI)** | `Menschlich & Natuerlich.preset.json` | Bricht typische KI-Floskeln ("AI-Slop") und Bulletpoint-Wüsten. Hohe Satzrhythmus-Varianz (Burstiness), lebendige Prosa. | `Mistral-7B-Instruct`, `MistThena7BV2`, `Qwen2.5-7B/14B` |
 | **📖 Kreatives Schreiben (Prosa & Dialoge)** | `Kreatives Schreiben.preset.json` | Atmosphärische Dichte, Show-don't-tell, facettenreiche Dialoge und Genre-Flexibilität (Noir, Sci-Fi, Fantasy). | `MistThena7BV2`, `Mistral-7B-Instruct-v0.3-emotional` |
+| **💼 Business & Marketing E-Mail** | `Business & Marketing E-Mail.preset.json` | High-Conversion B2B/B2C E-Mails, 3 Betreffzeilen, Pattern-Interrupt Hooks, Low-Friction CTAs, kein Spam/Jargon. | `Qwen2.5-14B/32B`, `SauerkrautLM-Nemo-12B`, `Mistral-Small` |
 | **✍️ Creative Writing (Mistral / MistThena)** | `Creative-Writing.preset.json` | Universelle Inferenz-Parameter (Temp 0.8, Repeat Penalty 1.12) für kreative Rollenspiele und Storytelling. | `MistThena7BV2`, `Mistral-7B` |
 
 ---
@@ -50,6 +51,7 @@ Starte danach LM Studio neu oder wähle die Presets direkt in der rechten Seiten
 │ 🎓 Oberstufen-Aufgaben       │ ⚡ SauerkrautLM-8B / Nemo-12B │
 │ 🧠 Mathe, Logik, Klausur     │ 🧠 DeepSeek-R1-Distill-14B   │
 │ 🛡️ Natürliche Blogtexte      │ 🍃 Mistral-7B / Qwen-2.5     │
+│ 💼 B2B & Marketing E-Mails   │ 🎯 Qwen-2.5-14B / Sauerkraut │
 │ 📖 Erzählungen & Dialoge     │ 🎭 MistThena7B / Mistral     │
 └──────────────────────────────┴──────────────────────────────┘
 ```

@@ -29,6 +29,7 @@ skill_paths = [
     Path("C:/Users/walte/.gemini/config/skills/chat-knowledge-manager/SKILL.md"),
     Path("C:/Users/walte/.gemini/config/skills/tax-automation-consultant/SKILL.md"),
     Path("C:/Users/walte/.agents/skills/fast-detect-gpt/SKILL.md"),
+    Path("C:/Users/walte/.agents/skills/human-text-presets/SKILL.md"),
 ]
 
 skills_data = []

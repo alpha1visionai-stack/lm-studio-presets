@@ -60,5 +60,15 @@ Starte danach LM Studio neu oder wähle die Presets direkt in der rechten Seiten
 
 ---
 
+## 🌐 Open WebUI & OpenRouter Integration
+
+Die Presets können direkt in **Open WebUI** (z. B. auf einem Server oder Docker-Container) genutzt werden:
+
+1. **Prompt-Import:** Importiere `openwebui_prompts_export.json` unter **Workspace $\rightarrow$ Prompts $\rightarrow$ Import Prompts**.
+2. **Slash-Befehle im Chat:** Nutze `/menschlich`, `/business`, `/email`, `/oberstufe`, `/eroerterung`, `/veredelung`, `/korrektur`, `/essay`, `/kreativ`, `/story`.
+3. **Modell-Empfehlungen für OpenRouter:** Siehe ausführlichen Leitfaden in [`OPENROUTER_MODELS.md`](OPENROUTER_MODELS.md).
+
+---
+
 ## 📄 Lizenz
 MIT License — Frei verwendbar, anpassbar und erweiterbar.

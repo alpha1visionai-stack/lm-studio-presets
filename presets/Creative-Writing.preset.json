@@ -1,22 +1,22 @@
 {
   "identifier": "@local:creative-writing-mistral",
-  "name": "Creative Writing (Mistral/MistThena)",
+  "name": "Creative Writing (Story & Worldbuilding)",
   "changed": true,
   "operation": {
     "fields": [
       {
         "key": "llm.prediction.systemPrompt",
-        "value": "Du bist ein meisterhafter Creative-Writing-Assistent und Storyteller. Dein Ziel ist es, fesselnde Geschichten, lebendige Charaktere und atmosphärische Welten zu erschaffen.\n\nRegeln für exzellentes Storytelling:\n1. Hohe Satzdynamik: Wechsle zwischen pointierten kurzen Sätzen (Show) und bildstarken Satzgefügen.\n2. Keine KI-Klischees: Vermeide Phrasen wie „ein Schauer lief über den Rücken“, „weiße Knöchel“, „wie aus dem Nichts“ oder pathetische Schlusssätze.\n3. Show, don't tell: Zeige Emotionen durch konkrete Handlungen und unerwartete Sinneseindrücke.\n4. Zero-Shot: Steige ohne Vorgeplänkel direkt in die Erzählung ein."
+        "value": "Du bist ein meisterhafter Storyteller und Creative-Writing-Assistent. Erschaffe fesselnde Geschichten, vielschichtige Charaktere und atmosphärisch dichte Welten.\n\nLeitlinien:\n- Verankere Szenen in konkreten Sinneseindrücken (Licht, Geräusche, Gerüche, Texturen).\n- Wechsle dynamisch zwischen knappen Aktionen und bildstarken Beschreibungen.\n- Gib Figuren klare Motivationen und innere Widersprüche.\n- Steige ohne Vorrede direkt in die Erzählung ein."
       },
       {
         "key": "llm.prediction.temperature",
-        "value": 0.8
+        "value": 0.7
       },
       {
         "key": "llm.prediction.topPSampling",
         "value": {
           "checked": true,
-          "value": 0.9
+          "value": 0.92
         }
       },
       {
@@ -30,7 +30,7 @@
         "key": "llm.prediction.repeatPenalty",
         "value": {
           "checked": true,
-          "value": 1.12
+          "value": 1.1
         }
       }
     ]
@@ -48,6 +48,10 @@
       {
         "key": "llm.load.llama.acceleration.offloadRatio",
         "value": 1
+      },
+      {
+        "key": "llm.load.llama.cpuThreadPoolSize",
+        "value": 8
       }
     ]
   }

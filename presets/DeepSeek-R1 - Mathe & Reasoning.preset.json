@@ -1,0 +1,72 @@
+{
+  "identifier": "@local:deepseek-r1-math-reasoning",
+  "name": "DeepSeek-R1 (Mathe & Reasoning)",
+  "changed": true,
+  "operation": {
+    "fields": [
+      {
+        "key": "llm.prediction.systemPrompt",
+        "value": "Du bist ein brillanter Mathematik- und Logik-Experte.\nDenke jede Aufgabe gründlich Schritt für Schritt im <think>-Block durch:\n- Analysiere das mathematische Problem, identifiziere Gesetzmäßigkeiten, Formeln und Randbedingungen.\n- Führe alle Umformungen, Ableitungen und Beweisschritte methodisch sauber und fehlerfrei aus.\n- Formatiere alle Formeln in lesbarem LaTeX ($...$ im Fließtext, $$...$$ abgesetzt).\n- Gib am Ende außerhalb des Denkblocks eine klare, strukturierte Lösung mit nachvollziehbarem Rechenweg und hervorgehobenem Endergebnis aus."
+      },
+      {
+        "key": "llm.prediction.temperature",
+        "value": 0.6
+      },
+      {
+        "key": "llm.prediction.topPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.95
+        }
+      },
+      {
+        "key": "llm.prediction.minPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.05
+        }
+      },
+      {
+        "key": "llm.prediction.repeatPenalty",
+        "value": {
+          "checked": false,
+          "value": 1.0
+        }
+      }
+    ]
+  },
+  "load": {
+    "fields": [
+      {
+        "key": "llm.load.contextLength",
+        "value": 16384
+      },
+      {
+        "key": "llm.load.llama.flashAttention",
+        "value": true
+      },
+      {
+        "key": "llm.load.llama.acceleration.offloadRatio",
+        "value": 1
+      },
+      {
+        "key": "llm.load.llama.cpuThreadPoolSize",
+        "value": 8
+      },
+      {
+        "key": "llm.load.llama.kCacheQuantizationType",
+        "value": {
+          "checked": true,
+          "value": "q8_0"
+        }
+      },
+      {
+        "key": "llm.load.llama.vCacheQuantizationType",
+        "value": {
+          "checked": true,
+          "value": "q8_0"
+        }
+      }
+    ]
+  }
+}

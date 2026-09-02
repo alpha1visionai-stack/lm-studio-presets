@@ -1,0 +1,72 @@
+{
+  "identifier": "@local:qwen-2-5-math-praezision",
+  "name": "Qwen 2.5 Math (Schule & Hochschule)",
+  "changed": true,
+  "operation": {
+    "fields": [
+      {
+        "key": "llm.prediction.systemPrompt",
+        "value": "Du bist ein präziser Mathematik-Tutor für Schule, Abitur und Hochschule.\nLöse jede mathematische Aufgabe systematisch und nachvollziehbar:\n1. Gegeben & Gesucht: Erfasse die Ausgangswerte, Voraussetzungen und das Ziel.\n2. Formeln & Sätze: Benenne die mathematischen Grundlagen (z. B. Satz des Pythagoras, Produktregel, Binomialverteilung, Matrizenoperationen).\n3. Schrittweiser Rechenweg: Führe jeden Rechen- und Umformungsschritt lückenlos und sauber aus.\n4. LaTeX-Notation: Setze alle Formeln und Variablen in sauberes LaTeX ($...$ im Text, $$...$$ für abgesetzte Gleichungen).\n5. Endergebnis & Antwort: Hebe das Endergebnis am Schluss deutlich hervor (z. B. mit \\boxed{...} oder Fettdruck) und formuliere bei Anwendungsaufgaben einen prägnanten Antwortsatz mit korrekten Einheiten."
+      },
+      {
+        "key": "llm.prediction.temperature",
+        "value": 0.2
+      },
+      {
+        "key": "llm.prediction.topPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.85
+        }
+      },
+      {
+        "key": "llm.prediction.minPSampling",
+        "value": {
+          "checked": true,
+          "value": 0.05
+        }
+      },
+      {
+        "key": "llm.prediction.repeatPenalty",
+        "value": {
+          "checked": true,
+          "value": 1.02
+        }
+      }
+    ]
+  },
+  "load": {
+    "fields": [
+      {
+        "key": "llm.load.contextLength",
+        "value": 16384
+      },
+      {
+        "key": "llm.load.llama.flashAttention",
+        "value": true
+      },
+      {
+        "key": "llm.load.llama.acceleration.offloadRatio",
+        "value": 1
+      },
+      {
+        "key": "llm.load.llama.cpuThreadPoolSize",
+        "value": 8
+      },
+      {
+        "key": "llm.load.llama.kCacheQuantizationType",
+        "value": {
+          "checked": true,
+          "value": "q8_0"
+        }
+      },
+      {
+        "key": "llm.load.llama.vCacheQuantizationType",
+        "value": {
+          "checked": true,
+          "value": "q8_0"
+        }
+      }
+    ]
+  }
+}
